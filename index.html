@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Play-ing with WebJars</title>
+    
+    <meta name="description" content="A presentation on WebJars used in the context of Play." />
+    <meta name="author" content="Christopher Hunt" />
+
+    <link href="css/index.css" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div class="step" data-x="0" data-y="0">
+        <h1>Play-ing with WebJars</h1>
+		<blockquote>
+			Who's heard of Play, WebJars, requirejs?
+		</blockquote>
+    </div>
+
+    <div class="step" data-x="2000" data-y="0">
+        <h1>Who am I</h1>
+		<p>Christopher Hunt, Typesafe</p>
+		<p>@huntchr</p>
+		<blockquote>
+			Developer for 30 years.
+			Used many languages including COBOL!
+			Committer on Play, author of Maven JavaScript Tools, JS Test Runner and other things.
+			One responsibility - enhance JS dev experience.
+			This is a prelude of a part of strategy doc to come.
+		</blockquote>
+    </div>
+
+    <div class="step" data-x="4000" data-y="0">
+        <h1>Typesafe</h1>
+		<p>Empowering professional developers<br/>to build amazing apps</p>
+		<p>typesafe.com</p>
+		<blockquote>
+			Scala, Akka, Play
+			Martin Odersky
+			Jonas Boner
+			The way we build software is changing
+			- mobile/html5
+			 - interactivity is everywhere
+			- data and compute clouds
+			 - scaling on demand is essential
+			- event driven systems
+			 - real time data
+			 - resilient data
+		</blockquote>
+    </div>
+
+    <div class="step" data-x="6000" data-y="0">
+        <h1>Reactive</h1>
+		<p>Event driven, asynchronous</p>
+    </div>
+
+    <div class="step" data-x="8000" data-y="0">
+        <h1>Play 2.3</h1>
+		<p>Goal: #1 Choice for Web Development</p>
+		<blockquote>
+			Strategy document forthcoming.
+			Easy to build web apps in Scala and/or Java. 
+			An alternative to servlets.
+			Lightweight, stateless, web-friendly architecture.
+			Extended webjars-play from JW to integrate it further with requirejs.
+			requirejs is an implementation of AMD.
+			- package and import statements.
+		</blockquote>
+    </div>
+
+    <div class="step" data-x="10000" data-y="0">
+        <h1>WebJars</h1>
+		<p>Bundles of joy</p>
+		<blockquote>
+			WebJars are JS libraries available for Maven and Ivy repositories.
+			Many WebJars for popular libraries and # increasing.
+			Why? 
+			- Managing versions and dependencies as important for JS.
+			- ulitises familiar and established repositories.
+			- orgs using and hosting Maven and Ivy based repos.
+			- 8 billion downloads from Maven Central in 2012.
+			 - more than the # of people on this planet.
+			Dependency mgmt
+			- bootstrap depends on jQuery
+			 - have a sys to manage that instead of doing manually
+			 - WebJars enable this sys.
+			 - JS devs thus more productive.
+		</blockquote>
+    </div>
+
+	<script src="js/impress.js"></script>
+	<script>impress().init();</script>
+
+</body>
+</html>
+
