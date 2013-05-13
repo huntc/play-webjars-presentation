@@ -24,86 +24,244 @@
 
 <div id="impress">
 
-    <div class="step" data-x="0" data-y="0">
+    <div class="step">
         <h1>Play-ing with WebJars</h1>
-		<blockquote>
-			Who's heard of Play, WebJars, requirejs?
-		</blockquote>
+        <img src="images/play2-logo-high-res.svg" width="317" height="76" alt="Typesafe Logo Big">
+        <!nbsp><img src="images/webjars.png" width="200" height="200" alt="Webjars">
+        <blockquote>
+            Who's heard of Play, WebJars, requirejs?
+        </blockquote>
     </div>
 
-    <div class="step" data-x="2000" data-y="0">
+    <div class="step">
         <h1>Who am I</h1>
-		<p>Christopher Hunt, Typesafe</p>
-		<p>@huntchr</p>
-		<blockquote>
-			Developer for 30 years.
-			Used many languages including COBOL!
-			Committer on Play, author of Maven JavaScript Tools, JS Test Runner and other things.
-			One responsibility - enhance JS dev experience.
-			This is a prelude of a part of strategy doc to come.
-		</blockquote>
+        <p>Christopher Hunt</p>
+        <p>@huntchr</p>
+        <img src="images/typesafe-logo-big.png" width="317" height="76" alt="Typesafe Logo Big">
+        <blockquote>
+            Developer for 30 years.
+            Used many languages including COBOL!
+            Committer on Play, author of Maven JavaScript Tools, JS Test Runner and other things.
+            One responsibility - enhance JS dev experience.
+            This is a prelude of a part of strategy doc to come.
+        </blockquote>
     </div>
 
-    <div class="step" data-x="4000" data-y="0">
-        <h1>Typesafe</h1>
-		<p>Empowering professional developers<br/>to build amazing apps</p>
-		<p>typesafe.com</p>
-		<blockquote>
-			Scala, Akka, Play
-			Martin Odersky
-			Jonas Boner
-			The way we build software is changing
-			- mobile/html5
-			 - interactivity is everywhere
-			- data and compute clouds
-			 - scaling on demand is essential
-			- event driven systems
-			 - real time data
-			 - resilient data
-		</blockquote>
+    <div class="step">
+        <h1>typesafe.com</h1>
+        <p>Empowering professional developers<br/>to build amazing apps</p>
+        <p>typesafe.com</p>
+        <img src="images/typesafe-logo-big.png" width="317" height="76" alt="Typesafe Logo Big">
+        <blockquote>
+            Scala, Akka, Play
+            Martin Odersky
+            Jonas Boner
+            The way we build software is changing
+            - mobile/html5
+             - interactivity is everywhere
+            - data and compute clouds
+             - scaling on demand is essential
+            - event driven systems
+             - real time data
+             - resilient data
+        </blockquote>
     </div>
 
-    <div class="step" data-x="6000" data-y="0">
+    <div class="step">
         <h1>Reactive</h1>
-		<p>Event driven, asynchronous</p>
+        <p>Event driven, asynchronous</p>
+        <br/>
+        <img src="images/reactive.png" width="544" height="83" alt="Reactive">
+		<blockquote>
+			- Resilient - recover and repair itself automatically for seamless business continuity
+			- Interactive - rich &amp; engaging, providing instant feedback based on user interactions
+			- Scalable - predictably &amp; elastically scalable; On-demand across cores, nodes and clusters
+			- Event-Driven - processes messages in parallel, asynchronously without blocking, lock free
+		</blockquote>
     </div>
 
-    <div class="step" data-x="8000" data-y="0">
+    <div class="step">
         <h1>Play 2.3</h1>
-		<p>Goal: #1 Choice for Web Development</p>
-		<blockquote>
-			Strategy document forthcoming.
-			Easy to build web apps in Scala and/or Java. 
-			An alternative to servlets.
-			Lightweight, stateless, web-friendly architecture.
-			Extended webjars-play from JW to integrate it further with requirejs.
-			requirejs is an implementation of AMD.
-			- package and import statements.
-		</blockquote>
+        <p>Goal: <em>#1</em> Choice for Web Development</p>
+        <img src="images/play2-logo-high-res.svg" width="317" height="76" alt="Typesafe Logo Big">
+        <blockquote>
+            Strategy document forthcoming.
+            Easy to build web apps in Scala and/or Java. 
+            An alternative to servlets.
+            Lightweight, stateless, web-friendly architecture.
+            Extended webjars-play from JW to integrate it further with requirejs.
+            requirejs is an implementation of AMD.
+            - package and import statements.
+        </blockquote>
     </div>
 
-    <div class="step" data-x="10000" data-y="0">
+    <div class="step">
         <h1>WebJars</h1>
-		<p>Bundles of joy</p>
-		<blockquote>
-			WebJars are JS libraries available for Maven and Ivy repositories.
-			Many WebJars for popular libraries and # increasing.
-			Why? 
-			- Managing versions and dependencies as important for JS.
-			- ulitises familiar and established repositories.
-			- orgs using and hosting Maven and Ivy based repos.
-			- 8 billion downloads from Maven Central in 2012.
-			 - more than the # of people on this planet.
-			Dependency mgmt
-			- bootstrap depends on jQuery
-			 - have a sys to manage that instead of doing manually
-			 - WebJars enable this sys.
-			 - JS devs thus more productive.
-		</blockquote>
+        <p>Bundles of joy</p>
+        <a href="http://www.webjars.org">www.webjars.org</a>
+        <p/>
+        <p><img src="images/webjars.png" width="200" height="200" alt="Webjars"></p>
+        <blockquote>
+            WebJars are JS libraries available for Maven and Ivy repositories.
+            Many WebJars for popular libraries and # increasing.
+            Why? 
+            - Managing versions and dependencies as important for JS.
+            - ulitises familiar and established repositories.
+            - orgs using and hosting Maven and Ivy based repos.
+            - 8 billion downloads from Maven Central in 2012.
+             - more than the # of people on this planet.
+            Dependency mgmt
+            - bootstrap depends on jQuery
+             - have a sys to manage that instead of doing manually
+             - WebJars enable this sys.
+             - JS devs thus more productive.
+        </blockquote>
     </div>
 
-	<script src="js/impress.js"></script>
-	<script>impress().init();</script>
+    <div class="step" data-z="-500">
+        <h1>build.scala</h1>
+        <pre>
+object ApplicationBuild extends Build {
+    
+val appName = "angular-seed-play"
+val appVersion = "1.0-SNAPSHOT"
+val appDependencies = Seq(
+ "org.webjars" % "angularjs" % "1.0.5",
+ "org.webjars" % "requirejs" % "2.1.1",
+ "org.webjars" % "webjars-play" % "2.1.0-1")
+
+val main = play.Project(
+  appName, appVersion, appDependencies)
+}
+        </pre>
+        <blockquote>
+            It is the only encounter with Scala that you require when building a Play app
+            Different versions of requirejs can be brought in
+            Visit the webjars website and show the bundles available along with their versions.
+            The above is SBT - Simple Build Tool.
+            - Versions of transitive dependencies can be overridden
+        </blockquote>
+    </div>
+
+    <div class="step" data-z="-500">
+        <h1>conf/routes</h1>
+        <pre>
+GET /js/*file        controllers.Assets.at(
+                        path="/public/js", file)
+
+GET /lib/require.js  controllers.WebJarAssets.requirejs
+
+GET /webjars/*file   controllers.WebJarAssets.at(file)
+        </pre>
+        <blockquote>
+            requirejs is a wrapper
+            - Declare where js files are to be served from
+             - *and* dependencies can be brought in
+            - Enable webjar based resources to be returned
+        </blockquote>
+    </div>
+
+    <div class="step" data-z="-500">
+        <img src="images/thats-all-folks.jpg" width="100%" height="100%" alt="Thats All Folks">
+        <blockquote>
+            Do not have to do more for Play to deliver your JS app
+        </blockquote>
+    </div>
+
+    <div class="step" data-z="-1000">
+        <h1>requirejs usage</h1>
+        <pre>
+&lt;script data-main="js/app" src="lib/require.js"&gt;&lt;/script&gt;
+
+require([
+  './controllers', 
+  './directives', 
+  './filters', 
+  './services', 
+  'webjars!angular.js'], function(controllers) {
+
+  ... 
+
+});
+        </pre>
+        <blockquote>
+            - quite intro to AMD itself
+             - syntax
+             - motivation
+            - declare dependencies on JavaScript files relative to the current one via the ./ convention. 
+            - The line of interest for this topic though is "webjars!angular.js". 
+             - call upon the WebJars requirejs plugin to load a file that is contained in a WebJar declared as a dependency.
+        </blockquote>
+    </div>
+
+    <div class="step" data-z="-1000">
+        <h1>Dependencies</h1>
+        <pre>
+require(["webjars!bootstrap.js"], function () {
+  ... 
+});
+        </pre>
+        <blockquote>
+            - automatically load jQuery. 
+            - bootstrap's WebJar declares how jQuery is to be located within a repository
+        </blockquote>
+    </div>
+
+    <div class="step" data-z="-1000">
+        <h1>Dependency Magic</h1>
+        <pre>
+&lt;dependencies&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.webjars&lt;/groupId&gt;
+    &lt;artifactId&gt;jquery&lt;/artifactId&gt;
+    &lt;version&gt;1.9.0&lt;/version&gt;
+  &lt;/dependency&gt;
+&lt;/dependencies&gt;
+
+requirejs.config({
+  shim: {
+    bootstrap: [ 'webjars!jquery.js' ]
+  }
+});
+        </pre>
+        <blockquote>
+            - Here's a snippet from the bootstrap WebJar pom.xml file
+            - bootstrap's WebJar provides "webjars-requirejs.js"
+             - whenever "webjars!bootstrap.js" is depended on, "webjars!jquery.js" will be loaded first.
+            - requirejs.config is standard requirejs configuration.
+             - Whenever a "webjars!" module is specified we strip off the "webjars!" prefix and the ".js" suffix 
+             - end up with a module name. 
+             - This module name is then looked up within the shim property of requirejs.config
+              - if found, the dependencies that are declared are loaded prior to bootstrap.
+        </blockquote>
+    </div>
+
+    <div class="step" data-z="-1000">
+        <h1>Aliases</h1>
+        <pre>
+define("jquery", [ "webjars!jquery.js" ], function() {
+  return $;
+}); 
+
+define([ "jquery" ], function($) {
+    ...
+}); 
+        </pre>
+        <blockquote>
+            - The main source code is entirely free of webjars.
+        </blockquote>
+    </div>
+
+    <div class="step" data-z="-1500">
+		<img src="images/not-the-end.jpg" width="100%" height="100%" alt="Not The End">
+        <blockquote>
+			- We intend to enhance the JavaScript development experience 
+			 - with the goal of making Play the #1 choice for web development.
+        </blockquote>
+    </div>
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 
 </body>
 </html>

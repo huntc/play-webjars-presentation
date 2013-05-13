@@ -91,13 +91,23 @@ body {
     border-radius: 35px;
 	height: 700px;
     width: 900px;
-    padding: 40px;
 	text-align: center;
+	transition: opacity 1s;
+}
+
+.step:not(.active) {
+    opacity: 0;
+}
+
+.step p em {
+	font-size: 70px;
+	font-weight: bold;
 }
 
 .step h1 {
 	background-color: #ee6768;
-    border-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
 	color: #e6faff;
 	font-size: 70px;
 	font-weight: 400;
@@ -109,6 +119,11 @@ body {
 	margin-bottom: 35px;
 }
 
+.step pre {
+	font: 24px monaco, courier;
+	margin: 35px;
+	text-align: left;
+}
 .step blockquote {
 	display: none;
 }
